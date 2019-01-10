@@ -1,0 +1,8 @@
+.main {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #FFF;
+  height: 100vh;
+  padding: 20px 40px;
+  box-shadow: #fefefe 1px 1px 3px;
+}

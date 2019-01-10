@@ -1,8 +1,10 @@
 import React from 'react';
 
+import './style.css';
+
 const Home = () => (
-  <div>
-    <h1>Cambiame!</h1>
+  <div className="main">
+    <h1>Mi Lista</h1>
   </div>
 );
 
