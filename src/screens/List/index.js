@@ -1,15 +1,14 @@
 import React from 'react';
-
 import './style.css';
 
-const List= ({title, body, tags,  createdAt, finishedAt}) => ( 
+const List= ({title, body, tags,  createdAt}) => ( 
     <div className="task">
-        <h3>{title}</h3> 
-        <p>Contenido: {body}</p>
-        <p className="tag">{tags} </p>
-        <p className="date">Creado en: {createdAt} / Finaliza en: {finishedAt}</p>
+        <h4>{title}</h4> 
+        <p className="date">Creado en: {createdAt} </p>
+        <p>{body}</p>
+        <p className="tag">{tags}</p>
+        <button className="finish-button" type="submit">Terminar</button>
     </div>
-   
 );
 
 export default List;

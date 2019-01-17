@@ -1,8 +1,8 @@
 // imports
 import React from 'react';
 import List from '../List/index';
+import Form from '../Form/index';
 import './style.css';
-
 
 // JSON tasks
 const tareas = [
@@ -10,7 +10,7 @@ const tareas = [
 		id: 1,
 		title: 'Hacer curso de React',
 		body: 'Crear la presentación y los ejercicios de ejemplo',
-		tags: ['react', 'curso'],
+		tags: ['react ', 'curso'],
 		done: false,
 		createdAt: '2019-01-10T14:41:52.566Z',
 		finishedAt: null
@@ -42,16 +42,15 @@ const tareas = [
 		createdAt: '2019-01-10T14:41:52.566Z',
 		finishedAt: null
 	}
-]
+];	
 
-// Component
-const Home = () =>  (
+// Component Home
+const Home = () => (	
 	<div className="main">  
-		<h1>Mi Lista</h1>
-		<div className="form">
-			<p>form</p>
-		</div>
+		<h1>Mi Lista  de tareas</h1>
+		<Form />
 		<div className="task">
+			<h2>Pendientes</h2>
 			{tareas.map ((task)=> (
 				<List 
 				title = {task.title}
@@ -65,6 +64,6 @@ const Home = () =>  (
 			))}
 		</div>
 	</div>
-	);
+);
 
 export default Home;
