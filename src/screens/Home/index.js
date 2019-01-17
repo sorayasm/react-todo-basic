@@ -12,6 +12,13 @@ class Home extends Component {
     }
   }
 
+  componentDidmount(){
+	  const tareas = localstorage.getItem('OLIVER-tareas';
+	  if(tareas){
+		  history.setState({tareas});
+	  }
+  }
+
   onSubmit = (e) => {
     e.preventDefault();
 

@@ -4,7 +4,6 @@
   background: #FFF;
   height: 100%;
   padding: 20px 40px;
-  box-shadow: #fefefe 1px 1px 3px;
 }
 
 .task {
@@ -16,7 +15,8 @@
 }
 
 .tag {
-  color: #02d9ef;
+  color: #39b3e4;
+  padding: .3em;
 }
 
 .finish {
@@ -30,8 +30,10 @@
 
 .finish-button {
   border: none;
-  background: #ffcb24;
-  padding: 5px;
-  font-size: 1rem;
-  color: #866b15;
+  margin: .5em ;
+  background: #0980c4;
+  padding: 0.5em;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  color: #ffffff;
 }
